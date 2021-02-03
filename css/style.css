@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+:root {
+  --header-color: rgba(8, 43, 133, 1);
+  --primary-color: #047aed;
+  --secondary-color: #1c3fa8;
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  font-family: "Lato", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+code,
+pre {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
+/* Navbar */
+header ul {
+  display: flex;
+}
+
+header .fa-facebook-f,
+header .fa-twitter,
+header .fa-github-alt {
+  color: #ffd700;
+  margin: 0 -5px;
+}
+
+header {
+  background-color: var(--header-color);
+  color: #ffd700;
+  height: 70px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header .flex {
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+header {
+  background-image: url(../images/bg-header-circuit.png);
+  background-repeat: repeat-x;
+  background-blend-mode: soft-light;
+}
+
+header a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+/* Title */
+
+.title {
+  background-image: url(../images/laptop-6000x3750.jpg);
+  min-height: 100vh;
+  background-color: rgba(8, 43, 133, 0.6);
+  background-blend-mode: screen;
+  background-position: center;
+}
+
+.title::before,
+.title::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  bottom: -140px;
+  right: 0;
+  left: 0;
+  background-color: rgba(245, 245, 245, 1);
+  background-image: url(../images/bg.png);
+  transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+}
+
+.title-text-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(8, 43, 133, 0.6);
+  font-size: 4em;
+  text-align: center;
+  background-color: rgba(251, 251, 251, 1);
+  padding: 5px;
+  border-radius: 2px;
+}
+
+/* tech-service */
+
+.tech-service,
+.web-service {
+  background-color: rgba(245, 245, 245, 1);
+  background-image: url(../images/bg.png);
+  padding: 100px 0;
+}
+
+.tech-service h1 {
+  font-size: 35px;
+}
+
+.tech-service h3 {
+  padding: 10px 0;
+  color: rgb(65, 105, 225);
+}
+
+h1 > .fa {
+  color: rgb(0, 128, 0);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 5px;
+}
+
+.adult-busy-cellphone {
+  background-image: url(../images/adult-busy-cellphone-3000X2087.jpg);
+  min-height: 100vh;
+  background-color: rgba(5, 5, 5, 0.4);
+  background-blend-mode: multiply;
+  background-position: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: -1;
+}
+
+/* web-service */
+.web-service h1 {
+  font-size: 35px;
+}
+
+.web-service h2 {
+  color: rgb(65, 105, 225);
+}
+
+.basic-package,
+.custom-design,
+.custom-development {
+  display: grid;
+  justify-content: center;
+}
+
+.email {
+  display: grid;
+  justify-content: center;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(245, 245, 245, 0.9);
+  padding: 100px 0;
+}
+
+footer h2 {
+  color: rgb(65, 105, 225);
+}
+
+.html5-badge {
+  background-image: url(../images/html5-badge-v-css3.png);
+  background-repeat: no-repeat;
+  height: 170px;
+  width: 120px;
+  margin-left: 10px;
+}
+
+.legal-bits-list li {
+  padding: 6px 0;
+  margin-top: 10px;
+}
+
+.copyright {
+  padding: 50px 0;
+}
+
+.copyright h1,
+.copyright p {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tablets and Under*/
+@media (max-width: 768px) {
+  .fa-facebook-f {
+    color: #ffd700;
+    margin: 0 -5px;
+  }
+
+  .title-text-center {
+    font-size: 2.2em;
+    text-align: center;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    /*justify-content: center;
+    /*justify-content: space-around;*/
+  }
+
+  .web-packages {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    justify-content: space-around;
+  }
+
+  .title {
+    background-image: url(../images/laptop-6000x3750.jpg);
+    background-size: cover;
+    background-color: rgba(8, 43, 133, 0.6);
+    background-blend-mode: screen;
+    background-position: center;
+  }
+
+  .adult-busy-cellphone {
+    background-image: url(../images/adult-busy-cellphone-3000X2087.jpg);
+    background-size: cover;
+    background-color: rgba(5, 5, 5, 0.4);
+    background-blend-mode: multiply;
+    background-position: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: -1;
+  }
+
+  .check-list-two,
+  .check-list-three,
+  .styles,
+  .custom-design,
+  .check-it {
+    display: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  header .fa-facebook-f,
+  header .fa-twitter,
+  header .fa-github-alt {
+    margin: 0 -5px;
+  }
+
+  .web-packages {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: space-around;
+  }
+
+  .check-list-two,
+  .check-list-three,
+  .styles,
+  .custom-design,
+  .custom-development,
+  .check-it {
+    display: none;
+  }
+}

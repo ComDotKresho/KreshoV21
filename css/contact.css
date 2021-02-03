@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* === Remove input autofocus webkit ==*/
+*:focus { outline: none; }
+/* === Form Typography === */
+body {font:100% 'LatoWebLight';}
+.contact_form h2, .contact_form label { font-family: 'LatoWebSemiboldItalic'; font-size: 1.375em; text-shadow: 0 1px 1px rgba(1,1,1,.8); text-transform: uppercase;font-weight: 600; font-style: normal; letter-spacing: 1.5px;}
+.contact_form h2 { color: rgba(237,229,116); }
+.contact_form h4 {font-family: "LatoWebLight"; font-style: italic; text-transform: capitalize; margin: 5px 0 15px; display: block; font-size: 13px; text-shadow: 0 1px 1px rgba(1,1,1,.8); text-align: center; word-spacing: -1px; }
+.form_hint, .required_notification { font-size: 11px; }
+/* === List Styles === */
+.contact_form ul { margin: 90px auto 120px auto; min-width: 260px; height: auto; background-image: url(../images/bg.png);border: 1px solid rgba(237,229,116, .8); position: relative; padding: 6px 6px; -moz-border-radius: 10px; -webkit-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; list-style-position: outside; list-style-type: none; }
+.contact_form li { padding: 13px; /*border-bottom:1px solid #eee;*/ position: relative; }
+/*.contact_form li :first-child, .contact_form li:last-child{
+	border-bottom:1px solid #777;
+}*/
+
+/* === Form Header === */
+.contact_form h2 {display: inline;}
+/*.required_notification { color: #d45252; margin: 3px 5px 0 0; display: inline; float: right; font-size:100%;}*/
+/* === Form Elements === */
+/*.contact_form label { width: 100px; margin-top: 3px; display: inline-block; float: left; padding: 3px; }*/
+.contact_form input { height: 30px; /*max-width: 100%;*/ width: 220px; padding: 5px 8px; }
+.contact_form select { height: 30px; /*max-width: 100%;*/ width: 260px; padding: 4px 8px; }
+.contact_form[value~=default] { color:#666; }
+.contact_form textarea { padding: 8px; height: 100px; /*width: 100%;*/ width: 260px; resize: none;}
+.contact_form button { margin-left: 5px; }
+/* form element visual styles */ 
+.contact_form input, .contact_form textarea, .contact_form select, .contact_form options { border: 1px solid #aaa; box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset; border-radius: 2px; padding-right: 30px; -moz-transition: padding .25s; -webkit-transition: padding .25s; -o-transition: padding .25s; transition: padding .25s; }
+.contact_form input:focus, .contact_form textarea:focus, select:focus { background: #fff; border: 1px solid #555; box-shadow: 0 0 3px #aaa; padding-right: 70px; }
+	
+/* === HTML5 validation styles === */
+.contact_form input:required, .contact_form textarea:required, .contact_form select:required {
+ background: #fff url(../images/contactimages/red_asterisk.png) no-repeat 98% center;
+}
+.contact_form input:required:valid, .contact_form textarea:required:valid, contact_form select:valid {
+ background: #fff url(../images/contactimages/valid.png) no-repeat 98% center;
+ box-shadow:0 0 5px #5cd053;
+ border-color: #28921f;
+}
+.contact_form input:focus:invalid, .contact_form textarea:focus:invalid, contact_form select:invalid {
+ background: #fff url(../images/contactimages/invalid.png) no-repeat 98% center;
+ box-shadow: 0 0 5px #d45252;
+ border-color:#b03535;
+ }
+/* === Form hints === */
+.contact_form input:focus + .form_hint { display: inline; }
+.contact_form input:required:valid + .form_hint {background: #28921f;}
+.contact_form input:required:valid + .form_hint::before {color:#28921f;}
+/* === Button Style === */
+button.submit { background-color:#009900; background: -webkit-gradient(linear, left top, left bottom, from(#009900), to(#05650B)); background: -webkit-linear-gradient(top, #009900, #05650B); background: -moz-linear-gradient(top, #009900, #05650B); background: -ms-linear-gradient(top, #009900, #05650B); background: -o-linear-gradient(top, #009900, #05650B); background: linear-gradient(top, #009900, #05650B); border: 1px solid #05650B; border-bottom: 1px solid #05650B; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; -webkit-box-shadow: 0 1px 0 0 #05650B inset; -moz-box-shadow: 0 1px 0 0 #05650B inset; box-shadow: inset 0 1px 0 0 #05650B; -ms-box-shadow: 0 1px 0 0 #05650B inset; -o-box-shadow: 0 1px 0 0 #05650B inset; color: white; font-weight: bold; padding: 6px 20px; text-align: center; text-shadow: 0 -1px 0 #05650B;}
+button.submit:hover { cursor: pointer; color: #333; text-shadow: 0px 1px #FFF;}
+button.submit:active { border: 1px solid #009900; -webkit-box-shadow: 0 0 10px 5px #05650B inset; -moz-box-shadow: 0 0 10px 5px #05650B inset; box-shadow: 0 0 10px 5px #05650B inset; -ms-box-shadow: 0 0 10px 5px #05650B inset; -o-box-shadow: 0 0 10px 5px #05650B inset; }
