@@ -94,7 +94,7 @@ header .flex {
 }
 
 header {
-  background-image: url(../images/bg-header-circuit.png);
+  background-image: url(../images/website/bg-header-circuit.png);
   background-repeat: repeat-x;
   background-blend-mode: soft-light;
 }
@@ -108,7 +108,7 @@ header a {
 /* Title */
 
 .title {
-  background-image: url(../images/laptop-6000x3750.jpg);
+  background-image: url(../images/website/laptop-6000x3750.jpg);
   min-height: 100vh;
   background-color: rgba(8, 43, 133, 0.6);
   background-blend-mode: screen;
@@ -124,7 +124,7 @@ header a {
   right: 0;
   left: 0;
   background-color: rgba(245, 245, 245, 1);
-  background-image: url(../images/bg.png);
+  background-image: url(../images/website/bg.png);
   transform: skewY(-3deg);
   -webkit-transform: skewY(-3deg);
   -moz-transform: skewY(-3deg);
@@ -149,7 +149,7 @@ header a {
 .tech-service,
 .web-service {
   background-color: rgba(245, 245, 245, 1);
-  background-image: url(../images/bg.png);
+  background-image: url(../images/website/bg.png);
   padding: 100px 0;
 }
 
@@ -174,7 +174,7 @@ h1 > .fa {
 }
 
 .adult-busy-cellphone {
-  background-image: url(../images/adult-busy-cellphone-3000X2087.jpg);
+  background-image: url(../images/website/adult-busy-cellphone-3000X2087.jpg);
   min-height: 100vh;
   background-color: rgba(5, 5, 5, 0.4);
   background-blend-mode: multiply;
@@ -217,7 +217,7 @@ footer h2 {
 }
 
 .html5-badge {
-  background-image: url(../images/html5-badge-v-css3.png);
+  background-image: url(../images/website/html5-badge-v-css3.png);
   background-repeat: no-repeat;
   height: 170px;
   width: 120px;
