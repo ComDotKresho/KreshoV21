@@ -6,6 +6,7 @@
 }
 
 /* email me section with tooltip */
+
 .sidenav {
   width: 100px;
   position: fixed;
@@ -39,8 +40,6 @@
   position: absolute;
   z-index: 1;
   top: 0%;
-
-  /*margin-right: -80px;*/
   opacity: 0;
   transition: opacity 0.3s;
 }
