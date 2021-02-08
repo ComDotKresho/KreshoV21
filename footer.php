@@ -26,7 +26,7 @@
         <ul itemscope="itemscope" itemtype="https://kresho.com/url" class="checkit-col">
           <li><a href="https://www.facebook.com/Kr8web" itemprop="facebook" target="blank" class="twitter" title="Link will open in a new tab"><i class="fab fa-facebook-f fa-2x"></i></a></li>
           <li><a href="https://twitter.com/KreshoCom" target="blank" class="facebook" title="Link will open in a new tab"><i class="fab fa-twitter fa-2x"></i></a></li>
-          <li><a href="https://github.com/ComDotKresho" target="blank" class="facebook" title="Link will open in a new tab"><i class="fab fa-github-alt fa-2x"></i></a></li>
+          <li><a href="https://github.com/krezak" target="blank" class="facebook" title="Link will open in a new tab"><i class="fab fa-github-alt fa-2x"></i></a></li>
         </ul> <!-- END content-wrap -->
       </div>
     </div>
